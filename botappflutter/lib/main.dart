@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Chatbot Flask',
       theme: ThemeData(
-primarySwatch: Colors.blue,
+primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Flutter & Python'),
+      home: MyHomePage(title: 'BOtApP dOeSnT wOrK'),
     );
   }
 }
@@ -25,14 +25,14 @@ final String title;
 class _MyHomePageState extends State<MyHomePage> {
 final GlobalKey<AnimatedListState> _listKey = GlobalKey();
   List<String> _data = [];
-  static const String BOT_URL = "https://supercodebot.herokuapp.com"; // replace with server address
+  static const String BOT_URL = "https://botapp-first.herokuapp.com/"; // replace with server address
   TextEditingController _queryController = TextEditingController();
 @override
   Widget build(BuildContext context) {
 return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Flutter & Python"),
+        title: Text("BOtApP dOeSnT wOrK"),
       ),
       body: Stack(
         children: <Widget>[
@@ -49,7 +49,7 @@ return Scaffold(
             child: TextField(
               decoration: InputDecoration(
                 icon: Icon(Icons.message, color: Colors.greenAccent,),
-                hintText: "Hello",
+                hintText: "the bot wont reply",
               ),
               controller: _queryController,
               textInputAction: TextInputAction.send,
